@@ -58,8 +58,8 @@
 
 1. If you were going to write instructions for a new person on how to create a new repo, fork a repo, and clone a repo, what would they be? Why would you fork a repository as opposed to create a new one?
 
-Answer: First, please create an GitHub account and go to your profile page, click repository tab and click the new button to create a new repository. Click the repository link to enter the page of this repo and click the fort button on top right and choose your GitHub account to fork the repo to your account. Once you fork the repo and copy the repo https link on the bottom right. Open the terminal and type git clone the_URL_of_the_repo to clone the repo to your local computer. Before you clone, make sure you go to the right directory you want to store the repo.
+   Answer: First, please create an GitHub account and go to your profile page, click repository tab and click the new button to create a new repository. Click the repository link to enter the page of this repo and click the fort button on top right and choose your GitHub account to fork the repo to your account. Once you fork the repo and copy the repo https link on the bottom right. Open the terminal and type git clone the_URL_of_the_repo to clone the repo to your local computer. Before you clone, make sure you go to the right directory you want to store the repo.
 
 2. What struggles did you have setting up git and GitHub? What did you learn in the process?
 
-Answer: I need learn more about the branch and how to use git effectively. So far, I haven't had much difficulty to play with git and GitHub. I learn the procedure of creating the repo and how to clone repo. Also, I learn how to use git to manage the code so that I can accomplish the project more effectively.
+   Answer: I need learn more about the branch and how to use git effectively. So far, I haven't had much difficulty to play with git and GitHub. I learn the procedure of creating the repo and how to clone repo. Also, I learn how to use git to manage the code so that I can accomplish the project more effectively.
