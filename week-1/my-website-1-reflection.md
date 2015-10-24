@@ -1,7 +1,7 @@
 # 1.6 Your Website, part 1 (medium)
 
 1. Paste a link to your [USERNAME].github.io repository.
-   Answer: This is [My Website](nunulong.github.io).
+   Answer: This is [My Website](Https://nunulong.github.io).
 
 2. Explain how to create a repository on GitHub and clone the repository to your local computer to a non-technical person.
    Answer: Go to your profile page and click the repository tab and click the new button to name the repo and hit the create repository button. Make sure select the public and add a MIT license. After creating the repo, copy the SSH or Https link of repo and open the terminal. Go to your prefered directory and type "git clone repo_link_you_copy".
