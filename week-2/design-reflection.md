@@ -1,7 +1,7 @@
 # Site Map Reflection
 
 
-* This is my ![site map](/home/amen/Desktop/DBC/phase-0/week-2/imgs/site-map.png) below:
+* This is my ![site map](/week-2/imgs/site-map.png) below:
 
 1. What are the 6 Phases of Web Design?
 
