@@ -4,7 +4,9 @@
 
 * This is the ![website index](/week-2/imgs/wireframe-index.png).
 
-* This is the ![blog index](/week-2/imgs/wireframe-blog-index.png).
+* This is the ![Home index](/week-2/imgs/wireframe-blog-index.png).
+
+* This is the ![blog index](/week-2/imgs/wireframe-blog-index-1.png)
 
 
 ## Reflection Questions
