@@ -1,0 +1,126 @@
+html {
+  background-color: #ffffff;
+}
+
+* {
+    color: #000080;
+}
+
+a {
+    color: #800080;
+}
+
+a:active {
+    background-color: #ff0000;
+}
+
+div {
+  display: inline-block;
+}
+
+.left{
+  margin-left: 90px;
+  float: left;
+}
+
+.right {
+    margin-right: 80px;
+    float: right;
+  
+}
+
+footer {
+    clear: both;
+}
+
+span {
+  font-weight: bold;
+  text-align: center;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+h4 {
+  font-size: 15px;
+}
+
+h3 {
+  font-size: 25;
+}
+
+#b {
+  font-size: 50px;
+}
+
+#h {
+  font-size: 50px;
+}
+
+img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+p {
+  font-size: 10px;
+  text-align: center;
+}
+
+#last {
+  font-size: 10px;
+}
+
+#line_1 {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #666666;
+}
+
+#line_2 {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #666666;
+}
+
+#line_3 {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #666666;
+}
+
+#line_4 {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #666666;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#small-text {
+  font-size: 8px;
+}
+
+/*
+
+1. What is important to know when linking an external file (like a stylesheet) to an HTML file?
+A: Make sure you get the path correctly.
+
+2. What tricks did you use to help you with positioning? How hard was it to get the site as you wanted it?
+A: The main thing is to wrap everything in id tags.
+  It was pretty frustrating and required a lot trial and error. But we managed to get it eventually.
+
+3. What CSS did you use to modify the element style (like size, color, etc.)
+A: We use height, width, color, margin, and border.
+
+Did you modify the HTML to include classes or ids? If so, which did you choose and why? If you didn't, how would you know which one to add to your HTML?
+When you compared your site to the actual code base, which do you think had cleaner code that followed best practices and why?
+A: Yes, we use them both because some styling we used for the entire tag(e.g. left, right) to make changes to multiple elements and then we used id to style individual elements.
+After comparing the sites, we think their site is cleaner because their experience level and understanding is currently better than ours. They were allowed to use hr tag. Also they used table tag for unorder list.
+They used tags that we are not familiar with.
+
+*/
