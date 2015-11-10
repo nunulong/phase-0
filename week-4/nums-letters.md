@@ -74,3 +74,17 @@
 6. How was this challenge? Did you get a good review of some of the basics?
 
    Answer: I like this challenge that introduces the test-driven programming and Rspec for testing programming. 
+
+
+## Challenge links
+
+* [Challenge 1 hours in a year](https://github.com/nunulong/phase-0/blob/master/week-4/hours_in_a_year.rb)
+
+* [Challenge 2 minutes in a decade](https://github.com/nunulong/phase-0/blob/master/week-4/minutes_in_a_decade.rb)
+
+* [Challenge 3 Defining Variables](https://github.com/nunulong/phase-0/blob/master/week-4/defining-variables.rb)
+
+*[Challenge 4 Simple String Methods](https://github.com/nunulong/phase-0/blob/master/week-4/simple-string.rb)
+
+*[Challenge 5 Local Variables and Basic Arithmetical Operations](https://github.com/nunulong/phase-0/blob/master/week-4/basic-math.rb)
+
