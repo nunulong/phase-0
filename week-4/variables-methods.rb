@@ -41,4 +41,12 @@ puts "The #{num2} is bigger and better number than #{num1}."
 6. What was confusing about this material? What made sense?
     I think this material is pretty clear and the local variable and method are very useful.
     
+Challenge links:
+
+math: https://github.com/nunulong/phase-0/tree/master/week-4/math
+
+define method: https://github.com/nunulong/phase-0/tree/master/week-4/define-method
+
+address: https://github.com/nunulong/phase-0/tree/master/week-4/address
+
 =end
