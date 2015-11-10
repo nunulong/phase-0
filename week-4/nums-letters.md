@@ -84,7 +84,7 @@
 
 * [Challenge 3 Defining Variables](https://github.com/nunulong/phase-0/blob/master/week-4/defining-variables.rb)
 
-*[Challenge 4 Simple String Methods](https://github.com/nunulong/phase-0/blob/master/week-4/simple-string.rb)
+* [Challenge 4 Simple String Methods](https://github.com/nunulong/phase-0/blob/master/week-4/simple-string.rb)
 
-*[Challenge 5 Local Variables and Basic Arithmetical Operations](https://github.com/nunulong/phase-0/blob/master/week-4/basic-math.rb)
+* [Challenge 5 Local Variables and Basic Arithmetical Operations](https://github.com/nunulong/phase-0/blob/master/week-4/basic-math.rb)
 
