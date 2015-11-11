@@ -1,3 +1,101 @@
-html {
-  background-color: blud;
+* {
+    font-family: helvetica;
+}
+
+.column-1 {
+    background-color: white;
+    display: inline-block;
+    float: left;
+    width: 40%;
+    padding: 4%;
+    margin-top: 2px;
+}
+
+.column-2 {
+    background-color: white;
+    display: inline-block;
+    float: right;
+    width: 40%;
+    padding: 4%;
+    margin-top: 2px;
+}
+
+footer {
+    clear: both;
+    margin-top: 10%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+    background-color: #92FFC0;
+    font-size: 13px;
+}
+
+header p {
+    background-color: white;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+}
+
+header h2 {
+    background-color: blue;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 5%;
+    padding-bottom: 3%;
+    text-align: left;
+    color: white;
+}
+
+header p {
+    font-size: 12px;
+    background-color: #85FFFE;
+}
+
+.column-1 h2 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.column-1 p {
+    font-size: 10px;
+}
+
+li a {
+    color: black;
+    font-size: 10px;
+    font-weight: bold;
+}
+
+article h2 {
+    font-size: 15px;
+}
+
+article > p {
+    font-size: 9px;
+}
+
+details summary {
+    background: #85FFFE;
+    font-weight: bold;
+    font-size: 10px;
+}
+
+details p {
+    background: #92FFC0;
+    font-size: 10px;
+}
+
+.column-2 h2 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+footer a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 14px;
 }
