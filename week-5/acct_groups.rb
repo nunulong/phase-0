@@ -36,7 +36,14 @@ def acct_groups(arr)
     arr.each_slice(4) {|a| p a}
   elsif num % 3 == 0
     arr.each_slice(3) {|a| p a}
-     
-    
-
+  elsif (num - 1) % 3 == 0
+    arr.each_slice(3) {|a| p a}
+  elsif (num + 1) % 3 == 0
+    p arr.pop(5)
+    arr.each_slice(3) {|a| p a}
+  elsif (num - 1) % 4 == 0 || (num + 1) % 4 == 0
+    arr.each_slice(4) {|a| p a}
+  else
+    arr.each_slice(5) {|a| p a}
+  end
 end
