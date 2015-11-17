@@ -26,3 +26,17 @@ check out the array length
       apart another group from new array and redo the process above 
   
 =end
+
+def acct_groups(arr)
+
+  num = arr.length
+  if num % 5 == 0
+    arr.each_slice(5) {|a| p a}
+  elsif num % 4 == 0
+    arr.each_slice(4) {|a| p a}
+  elsif num % 3 == 0
+    arr.each_slice(3) {|a| p a}
+     
+    
+
+end
