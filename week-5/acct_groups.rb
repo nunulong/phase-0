@@ -47,3 +47,27 @@ def acct_groups(arr)
     arr.each_slice(5) {|a| p a}
   end
 end
+
+=begin
+
+What was the most interesting and most difficult part of this challenge?
+
+A: I think how to check if the length of the array is divisible by 3, 4, or 5. Also how to split the array to sub-arrays with 3 elements at least for each sub-array.
+
+Do you feel you are improving in your ability to write pseudocode and break the problem down?
+
+A: Yes.
+
+Was your approach for automating this task a good solution? What could have made it even better?
+
+A: I think right now it is the good solution. I think I may D.R.Y this solution a little bit after learning more methods of Ruby.
+
+What data structure did you decide to store the accountability groups in and why?
+
+A: I use array since I only concern the array with multiple names not the key-value pairs. I think array will fulfill the solution.
+
+What did you learn in the process of refactoring your initial solution? Did you learn any new Ruby methods?
+
+A: I learn each_slice and pop methods to refactor my solution. My initial solution uses slice solution and then I print each sub-array.
+
+=end
