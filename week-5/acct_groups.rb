@@ -48,6 +48,9 @@ def acct_groups(arr)
   end
 end
 
+name_group = Array.new(299) { |i| i = rand(1000) }
+acct_groups(name_group)
+
 =begin
 
 What was the most interesting and most difficult part of this challenge?
