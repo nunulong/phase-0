@@ -100,3 +100,33 @@ end
 #
 #
 #
+
+=begin
+Identify and describe the Ruby method(s) you implemented.
+
+Answer:
+For Array: find matching data
+I use select method to give the conditional selection to collect all the targeted elements in the array.
+Inside the curly bracket, I put the condition I need to find the targeted element within which I use include? method.
+Then the whole method will get all the elements I need
+
+For Hash: find matching data
+I use select and keys methods.
+First, I use select give the conditional selection from hash.
+Second, I put the condition in side the curly bracket. Importantly, since the hash is key-value pair, inside the two pipes, I put two variables that represent key and value. 
+And I give the condition that the value needs to have and that will target the elements I want.
+Since the final result only returns the key array, I choose to use keys method to return all targeted keys in a new array.
+
+
+Teach your accountability group how to use the methods
+
+Answer: select method is one of the enumerable method in ruby that takes a block in the curly bracket. 
+We usually use like this: array.select {block of code}. When we run the method, the block will find all the targeted elements at once by iterating the element.
+When using the select method to hash, you need to put |key, value| in stead of |element| inside the block, and also to put the condition that is assigned to |key, value|. When running the method, the targeted key-value pair will be found.
+If you want to collect all the hash keys and output as an array, please use keys, which just return the key array.
+
+Share any tricks you used to find and decipher the Ruby Docs
+
+Answer: I usually search the keyword in Ruby Docs and read through the code and examples, and try the examples by my own to get familiar with the method.
+
+=end
