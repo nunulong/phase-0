@@ -1,37 +1,59 @@
 # Your Names
-# 1)
-# 2)
+# 1) Ting Wang
+# 2) Paul Dynowski 
 
-# We spent [#] hours on this challenge.
+# We spent [3] hours on this challenge.
 
 # Bakery Serving Size portion calculator.
 
-def serving_size_calc(item_to_make, order_quantity)
-  library = {"cookie" => 1, "cake" =>  5, "pie" => 7}
-  error_counter = 3
 
-  library.each do |food|
-    if library[food] != library[item_to_make]
-      p error_counter += -1
-    end
+# input number of people to feed, library containing how many people each item feeds
+# start a counter at the number of people to feed, decrement the counter until it reaches the number that an item in the hash can feed
+# divide the original number of people by the number of people that that item will feed to determine how many of that item are needed
+# mod the original number buy the people that item will feed to determine number of people remaining to feed
+# find the item (key) that has the used value of people that it will feed
+# use recursion into this method with remaining people to determine smaller items.
+
+def calc_item_number(people_to_feed, people_served_by_item)
+  number_search = people_to_feed
+  until people_served_by_item.value?(number_search)
+    number_search -= 1
   end
+  number_to_serve = people_to_feed / number_search
+  number_remaining_to_serve = people_to_feed % number_search
+  item_to_serve = people_served_by_item.select{|item,value| value == number_search}.keys[0]
 
-  if error_counter > 0
-    raise ArgumentError.new("#{item_to_make} is not a valid input")
-  end
-
-  serving_size = library.values_at(item_to_make)[0]
-  serving_size_mod = order_quantity % serving_size
-
-  case serving_size_mod
-  when 0
-    return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}"
+  if(number_remaining_to_serve == 0)
+    " #{number_to_serve} #{item_to_serve}"
   else
-    return "Calculations complete: Make #{order_quantity/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover ingredients. Suggested baking items: TODO: MAKE THIS FEATURE"
+    " #{number_to_serve} #{item_to_serve}#{calc_item_number(number_remaining_to_serve, people_served_by_item)}"
   end
+  
 end
 
-p serving_size_calc("pie", 7)
+def serving_size_calc(item_to_make, people_to_feed)
+  # passed arguments: item to make, total number of ingredients
+  # indicates how many ingredients needed to make item
+  people_served_by_item = {"cookie" => 1, "cake" =>  5, "pie" => 7}
+  
+  # it appears that this code section performs a nil check on the input item
+
+  unless people_served_by_item.key?(item_to_make)
+    raise ArgumentError.new("#{item_to_make} is not a valid input")
+  end
+  ################################################
+  # grabs required number of ingredients from library, reports number of full items can be made, reports # of full items and returns # of leftover ingredients
+  serving_size = people_served_by_item.values_at(item_to_make)[0]
+  serving_size_mod = people_to_feed % serving_size
+  
+  if serving_size_mod == 0
+    "Calculations complete: Make #{people_to_feed/serving_size} of #{item_to_make}"
+  else
+    "Calculations complete: Make #{people_to_feed/serving_size} of #{item_to_make}, you have #{serving_size_mod} leftover people to feed. Suggested baking items: #{calc_item_number(serving_size_mod,people_served_by_item)}"
+  end
+end
+p calc_item_number(12, {"cookie" => 1, "cake" =>  5, "pie" => 7})
+p serving_size_calc("pie", 13)
 p serving_size_calc("pie", 8)
 p serving_size_calc("cake", 5)
 p serving_size_calc("cake", 7)
@@ -41,3 +63,32 @@ p serving_size_calc("THIS IS AN ERROR", 5)
 
 #  Reflection
 
+=begin
+
+input: number of people to feed, the serving size library
+
+output: the suggested baking items
+
+sort the library by the serving size from biggest to smallest
+
+iterate through until the number is less or equal to the number of leftover people
+
+once we get the serving size number, we do the calculation to get the suggested baking items
+
+What did you learn about making code readable by working on this challenge?
+
+A: I learned a lot in the challenge. I learn that we need to give specific name that will be very clear to readers. 
+
+Did you learn any new methods? What did you learn about them?
+
+A: Yes, I learned a lot from my pair. He used recursion, enumerable methods to iterate the array and value? to find if the element is inside the array. 
+
+What did you learn about accessing data in hashes? 
+
+A: I learn that we can use key to access, also we can return key array by using keys method, and value array by using values. Also we can transfer hash to array to access the value we want.
+
+What concepts were solidified when working through this challenge?
+
+A: I think that the enumerable methods and recursion algorithm I will definitely use in the future.
+
+=end
