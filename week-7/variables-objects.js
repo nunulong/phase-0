@@ -6,9 +6,9 @@
 // Write your code below.
 
 var secretNumber = 7;
-password = "just open the door";
-allowedIn = false;
-members = ["John", "Tom", "Mike", "Mary"];
+var password = "just open the door";
+var allowedIn = false;
+var members = ["John", "Tom", "Mike", "Mary"];
 
 // __________________________________________
 
