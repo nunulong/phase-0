@@ -24,7 +24,7 @@
 
 ## Release 6: Your Own Schema
 
-    This is the schema ![image](/schema.png) I make. Please check it out. Thanks.
+   This is the schema ![image](/database-intro/schema.png) I make. Please check it out. Thanks.
 
 ## Release 7 Reflection
 
