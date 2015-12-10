@@ -10,6 +10,11 @@
   This is many-to-many schema I create. Please check it out.
   ![image](/week-8/imgs/grocery_list.png)
 
+# Release 5: Complex Databases
+
+  This is complex schema I create. Please check it out.
+  ![image](/week-8/imgs/complex_schema.png)
+
 # Release 6: Reflect
 
    1. What is a one-to-one database?
