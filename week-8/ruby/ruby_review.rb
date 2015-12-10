@@ -250,7 +250,7 @@ def letter_convert(sentence, shift)
   sentence
 end
 
-puts letter_convert("csy&wii,@m'zi@xyvrih$xli*qssr$mrxs&alex@m#pmoi%xs#gepp%e^hiexl#wxev.", 4)
+puts letter_convert("m^aerx%e&gsoi!", 4)
     
 
 def convert_punc(sentence)
@@ -283,26 +283,92 @@ p dr_evils_cipher("alc@qeoi*e$xvmppmsr^alir#ai*gsyph%qeoi...#fmppmsrw?")
 
 # Pseudocode
 
+=begin
 
+assign first two fibonacci numbers that are 0 and 1
+next third number should be the sum of the first two numbers and so on and so forth
+we can calculate whatever fibonacci number we want 
+given the input number, we need to compare it with the fibonacci number we generate from the function
+if the number is equal to fibonacci, that means this number is fibonacci, otherwise not
+  
+=end
 
 # Initial Solution
 
 def is_fibonacci?(num)
-  
-
+  fibonacci(num, first=0, second=1) == num
 end
 
+def fibonacci(num, first=0, second=1)
+  if first + second <= num
+    fibonacci(num, second, first + second) 
+  else
+    second
+  end
+end
 
+puts fibonacci(84747483837)
+puts is_fibonacci?(344455)
 
 # Refactored Solution
 
+# Reflection
 
 
+# I worked on this challenge [by myself, with: ].
+# This challenge took me [#] hours.
 
 
+# Pseudocode
 
+=begin
+
+iterate the array and get each number
+use each number to check if it is divisible by 3, 5, or 15
+if divisible by 3, this number is replaced by Fizz
+if divisible by 5, this number is replaced by Buzz
+if divisible by 15, this number is replaced by FizzBuzz
+
+=end
+
+# Initial Solution
+
+def super_fizzbuzz(array)
+  array.map! {|x|
+    if x % 15 == 0
+      x = "FizzBuzz"
+    elsif x % 3 == 0
+      x = "Fizz"
+    elsif x % 5 == 0
+      x = "Buzz"
+    else
+      x
+    end
+  }
+  array
+end
+
+puts super_fizzbuzz([1,3,4,5,6,15,4,6,7,5,4,3,4])
+
+# Refactored Solution
 
 # Reflection
 
 # Reflection
 # Keep your reflection limited to 10-15 minutes!
+
+=begin
+  
+What concepts did you review or learn in this challenge?
+
+A: I review the recursion, enumerable, string, array, if-else workflow, and function concept.
+
+What is still confusing to you about Ruby?
+
+A: I think I still need to learn more ruby methods to make my code clean and DRY
+
+What are you going to study to get more prepared for Phase 1? 
+
+A: I am going to review all the textbooks about ruby, javascript, html, and css.
+  
+=end
