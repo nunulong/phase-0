@@ -27,8 +27,6 @@
    This is the schema ![image](/week-8/database-intro/schema.png) I make. Please check it out. 
    Thanks.
 
-   This is the complex schema ![image](/week-8/database-intro/complex_schema.png) I make. Please check it out, too. Thanks
-
 ## Release 7 Reflection
 
 - What are databases for?
